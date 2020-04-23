@@ -2,6 +2,10 @@
 ## functions do
 
 ## Write a short comment describing this function
+## The purpose of the first function is to create a list that further
+## has functions to set the matrix and get the matrix and then set the
+## inverse and get the inverse of the matrix
+
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -20,7 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The second function gets the inverse from the cache if it has 
+## already been calculated otherwise it calculates the inverse and
+## then sets it in the cache
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
